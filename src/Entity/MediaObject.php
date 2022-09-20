@@ -76,6 +76,6 @@ class MediaObject
         else{
             $protocol = 'http';
         }
-        return $protocol . "://" . $_SERVER['HTTP_HOST'].'/'.$this->contentUrl;
+        return $protocol . "://" . $_SERVER['HTTP_HOST'].$this->contentUrl;
     }
 }
