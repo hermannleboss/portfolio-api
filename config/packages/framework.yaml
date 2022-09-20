@@ -4,7 +4,9 @@ framework:
     #csrf_protection: true
     http_method_override: false
     trusted_proxies: '%env(TRUSTED_PROXIES)%'
-    trusted_hosts: ['^localhost$','^herokuapp\.com\$']
+#    trusted_hosts: ['^localhost$','^herokuapp\.com\$']
+    trusted_hosts: 'api-hr-symfony.herokuapp.com'
+    
     # See https://caddyserver.com/docs/caddyfile/directives/reverse_proxy#headers
     trusted_headers: ['x-forwarded-for', 'x-forwarded-proto']
 
